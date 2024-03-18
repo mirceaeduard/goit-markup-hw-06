@@ -688,8 +688,8 @@ color: var(--white);
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #303030;
-    opacity: 0.7;
+    background-color: #30303050;
+    opacity: 1;
     transition: transform var(--transition);
 }
 
@@ -703,9 +703,9 @@ color: var(--white);
     background-color: var(--dairy);
 	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
 	border-radius: 4px;
-    width: 390px;
+    width: 360px;
     height: 500px;
-	opacity: 0.95;
+	opacity: 1;
     position: absolute;
 }
 
@@ -719,3 +719,204 @@ color: var(--white);
     right: 24px;
     box-shadow: 0px 2px 2px var(--light-slate);
 }
+
+.modal-text {
+	position: absolute;
+	width: 360px;
+	height: 24px;
+	/* Body Medium */
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 24px;
+	/* identical to box height, or 150% */
+	text-align: center;
+	letter-spacing: 0.02em;
+	color: var(--navy-blue);
+}
+
+.modal-form {
+	display: flex;
+	flex-direction: column;
+	margin-top: 50px;
+
+}
+
+.modal-form-label {
+	margin-top: 2px;
+	display: flex;
+	flex-direction: column;
+	width: 360px;
+	/*height: 58px;*/
+	
+}
+
+.modal-form-label p {
+	margin-top: 2px;
+	margin-bottom: 2px;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 14px;
+	/* identical to box height, or 117% */
+	letter-spacing: 0.04em;
+	color: var(--light-slate);
+}
+
+.input {
+	width: 320px;
+	height: 40px;
+	border-radius: 4px;
+}
+
+.input:focus {
+	border: 2px solid;
+	border-color: var(--iris);
+	transition: color 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .input:hover {
+	border: 2px solid;
+	border-color: var(--iris);
+	transition: color 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .input:active {
+	border: 2px solid;
+	border-color: var(--iris);
+	transition: color 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .input-textarea {
+	width: 360px;
+	height: 120px;
+	border-radius: 4px;
+  }
+
+  .input-textarea:focus {
+	border: 2px solid;
+	border-color: var(--iris);
+	transition: border-color 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .input-textarea:hover {
+	border: 2px solid;
+	border-color: var(--iris);
+	transition: color 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .input-textarea:active {
+	border: 2px solid;
+	border-color: var(--iris);
+	transition: color 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  #input-name {
+	background-image: url('../images/person-black.svg');
+	background-position: 12px 12px; 
+	background-repeat: no-repeat;
+	padding-left: 40px;
+ }
+
+  #input-name:focus,
+  #input-name:hover,
+  #input-name:active, {
+	border: 2px solid var(--iris);
+	background-image: url('../images/person-iris.svg');
+	transition: backround-image 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+ #input-phone {
+	background-image: url('../images/phone-black.svg');
+	background-position: 10px 10px; 
+	background-repeat: no-repeat;
+	padding-left: 40px;
+ }
+
+ #input-phone:focus,
+  #input-phone:hover,
+  #input-phone:active {
+	border: 2px solid var(--iris);
+	background-image: url('../images/phone-iris.svg');
+	transition: backround-image 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+ #input-mail {
+	background-image: url('../images/email-black.svg');
+	background-position: 16px 10px; 
+	background-repeat: no-repeat;
+	padding-left: 40px;
+ }
+
+  #input-mail:focus,
+  #input-mail:hover,
+  #input-mail:active {
+	border: 2px solid;
+	border-color: var(--iris);
+	background-image: url('../images/email-iris.svg');
+	background-repeat: no-repeat;
+	transition: backround-image 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  #person-name {
+	width: 18px;
+	height: 24px;
+	top: 25%;
+	left: 30px;
+ }
+
+  #person-phone {
+	width: 18px;
+	height: 24px;
+	top: 38%;
+	left: 30px;
+  }
+
+  #person-email {
+	width: 30px;
+	height: 30px;
+	top: 51%;
+	left: 28px;
+  }
+
+  .modal-form-label svg {
+	position: absolute;
+	
+	fill: currentColor;
+	stroke: currentColor;
+	stroke-width: 2;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+  }
+
+  .modal-form-label svg:focus {
+	fill: var(--iris);
+	stroke: var(--iris);
+	transition: color 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .modal-form-label svg:hover {
+	fill: var(--iris);
+	stroke: var(--iris);
+	transition: color 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .modal-form-label svg:active {
+	fill: var(--iris);
+	stroke: var(--iris);
+	transition: color 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }

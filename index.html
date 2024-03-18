@@ -54,8 +54,43 @@
 			<!-- Modal-->
 			<div class="modal is-hidden" data-modal>
 				<div class="modal-content">
-					<button class="close-btn" data-modal-close="">×</button>
-						Continut modal
+					<button class="close-btn" data-modal-close="">×</button><br><br>
+					<p class="modal-text">Leave your contacts and we will call you back</p>
+					<form class="modal-form">
+						<label class="modal-form-label">
+							<p>Nume:</p>
+							<input class="input" id="input-name" name="name" type="text" minlength="2" placeholder="Numele">
+							<!--
+							<svg id="person-name">
+								<use href="./images/symbol-defs-modal.svg#icon-person"></use>
+							</svg>
+						    -->
+						</label>
+						<label class="modal-form-label">
+							<p>Phone:</p>
+							<input class="input" id="input-phone" name="phone" type="tel" minlength="10" placeholder="Telefonul">
+							<!--
+							<svg id="person-phone">
+								<use href="./images/symbol-defs-modal.svg#icon-phone"></use>
+							</svg>-->
+						</label>
+						<label class="modal-form-label">
+							<p>Email:</p>
+							<input class="input" id="input-mail" name="email" type="email" placeholder="Email-ul">
+							<!--<svg id="person-email">
+								<use href="./images/symbol-defs-modal2.svg#icon-email"></use>
+							</svg>-->
+							
+						</label>
+						<div>
+							<label class="modal-form-label" for="comment">
+								<p>Comentariu</p>
+								
+							</label>
+							<textarea class="input-textarea" name="comment" rows="10" cols="45" placeholder="Text input"></textarea>
+						</div>
+						
+					</form>
 				</div>
 			</div>
 			
